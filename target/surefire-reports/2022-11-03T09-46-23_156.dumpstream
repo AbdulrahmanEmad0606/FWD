@@ -1,0 +1,4 @@
+# Created at 2022-11-03T09:46:23.332
+Boot Manifest-JAR contains absolute paths in classpath 'D:\FWD project\FWD\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

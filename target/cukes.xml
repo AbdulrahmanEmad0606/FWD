@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="29.827">
+    <testcase classname="D08_WishlistStepDef | users could add any product to the wishlist" name="user could add any product to the wishlist" time="15.21">
+        <system-out><![CDATA[Given user go to home page6.................................................passed
+When user navigated to the product..........................................passed
+And user add the item to the wishlist.......................................passed
+Then the product added to the wishlist successfully.........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="D08_WishlistStepDef | users could add any product to the wishlist" name="user could show his wish list" time="14.492">
+        <failure message="element click intercepted: Element &lt;a href=&quot;/wishlist&quot; class=&quot;ico-wishlist&quot;&gt;...&lt;/a&gt; is not clickable at point (1165, 22). Other element would receive the click: &lt;p class=&quot;content&quot;&gt;...&lt;/p&gt;&#10;  (Session info: chrome=107.0.5304.88)&#10;Build info: version: '4.4.0', revision: 'e5c75ed026a'&#10;System info: host: 'DESKTOP-DGNKSQK', ip: '192.168.8.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [da342c0258292061571a6e4ed48480a1, clickElement {id=123b1953-d8ba-4b97-9552-fcf4eb0dd217}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53557}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53557/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (da342c0258292061571a6e4ed48480a1)] -&gt; xpath: //div[@class='header-links']/ul/li[3]/a]&#10;Session ID: da342c0258292061571a6e4ed48480a1" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[Given user go to home page6.................................................passed
+When user navigated to the product..........................................passed
+And user add the item to the wishlist.......................................passed
+And user close the success message..........................................passed
+And user clicks on the Wishlist button......................................failed
+Then the Qty must be greater than zero......................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/wishlist" class="ico-wishlist">...</a> is not clickable at point (1165, 22). Other element would receive the click: <p class="content">...</p>
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-DGNKSQK', ip: '192.168.8.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [da342c0258292061571a6e4ed48480a1, clickElement {id=123b1953-d8ba-4b97-9552-fcf4eb0dd217}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53557}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53557/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (da342c0258292061571a6e4ed48480a1)] -> xpath: //div[@class='header-links']/ul/li[3]/a]
+Session ID: da342c0258292061571a6e4ed48480a1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.example.stepDefs.D08_WishlistStepDef.userClicksOnTheWishlistButton(D08_WishlistStepDef.java:44)
+	at ✽.user clicks on the Wishlist button(file:///D:/FWD%20project/FWD/src/main/resources/Features/F08_Wishlist.feature:14)
+]]></failure>
+    </testcase>
+</testsuite>
